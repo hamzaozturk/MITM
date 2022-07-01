@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MITMApp: App {
+    let network = Network()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(network)
         }
     }
 }
